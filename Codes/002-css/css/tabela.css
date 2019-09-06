@@ -1,0 +1,51 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	font-family: Raleway;
+	text-align: justify;
+	background-color: #222;
+	color: #ddd;
+	min-height: 100%;
+}
+
+.container {
+	width: 548px;
+	margin: 25px auto;
+	padding: 20px;
+}
+
+.container > * {
+	width: 548px;
+}
+
+h1, h2, h3 {
+	font-family: Montserrat;
+	text-align: left;
+}
+
+a {
+	color: #7777dd;
+}
+
+table {
+	background-color: #111;
+	width: 100%;
+}
+
+td {
+	background-color: #333;
+}
+
+thead > tr > th {
+	text-align: center;
+}
+
+tfoot > tr > th {
+	text-align: right;
+}
+
+input, select {
+	margin-bottom: 10px;
+}
