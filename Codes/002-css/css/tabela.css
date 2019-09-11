@@ -42,10 +42,38 @@ thead > tr > th {
 	text-align: center;
 }
 
+tbody > tr:nth-child(2n) > td {
+	background-color: #444;
+}
+
+tbody > tr:hover > td:not([rowspan]) {
+	background-color: #41214d;
+}
+
 tfoot > tr > th {
 	text-align: right;
 }
 
 input, select {
 	margin-bottom: 10px;
+}
+
+a {
+	color: #fff;
+	background-color: #41214d;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/* Links não acessados - oposto de visited */
+a:link {
+	color: #41214d;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
 }
