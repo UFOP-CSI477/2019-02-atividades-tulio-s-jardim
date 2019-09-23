@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<!--
+
+	01 - Criar uma página principal com as seguintes opções: Produtos (cadastrar e listar), Clientes (Listar e Vender) e Sair. Criar uma outra página (formulário) para cadastro do produto. Campos: nome, peso, unidade de medida, valor, estoque inicial, mercado (interno, externo), fornecedor (select), dentre outros -> Listar: construir uma tabela. Cadastro de clientes e Vender: construir formulários.
+
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Cadastro de Produtos</title>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+	<div class="container">
+		<h1>Cadastro de Produtos</h1>
+
+		<form method="get" action="cadastroProdutos.html">
+			
+			<label id="Nome">Nome: </label>
+			<input type="text" name="Nome" id="Nome"><br>
+
+			<label id="Peso">Peso: </label>
+			<input type="text" name="Peso" id="Peso"><br>
+
+			<label id="Medida">Medida: </label>
+			<input type="text" name="Medida" id="Medida"><br>
+
+			<label id="Valor">Valor: </label>
+			<input type="text" name="Valor" id="Valor"><br>
+
+			<label id="Estoque">Estoque: </label>
+			<input type="text" name="Estoque" id="EstoqueFornecedor"><br>
+
+			<label id="Mercado">Mercado: </label>
+			<select id="Mercado" name="Mercado">
+				<option value="Interno">Interno</option>
+				<option value="Externo">Externo</option>
+			</select>
+
+			<label id="Fornecedor">Fornecedor: </label>
+			<select name="Fornecedor" id="Fornecedor">
+				<option value="Desconhecido">Desconhecido</option>
+				<option value="Seu Adelino">Seu Adelino</option>
+				<option value="Shostners & Shostners">Shostners & Shostners</option>
+			</select><br>
+
+			<input type="submit" name="Cadastrar" value="Cadastrar">
+		</form>
+
+		<h2><a href="index.html">Voltar</a></h2>
+	</div>
+</body>
+</html>

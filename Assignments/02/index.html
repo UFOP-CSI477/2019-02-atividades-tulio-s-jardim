@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<!--
+
+	01 - Criar uma página principal com as seguintes opções: Produtos (cadastrar e listar), Clientes (Listar e Vender) e Sair. Criar uma outra página (formulário) para cadastro do produto. Campos: nome, peso, unidade de medida, valor, estoque inicial, mercado (interno, externo), fornecedor (select), dentre outros -> Listar: construir uma tabela. Cadastro de clientes e Vender: construir formulários.
+
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Introdução ao HTML</title>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+
+
+<body>
+		<div class="container">
+			<h1>Página Principal</h1>
+			
+			<h2><a href="listagemProdutos.html">Produtos</a></h2>
+			<a href="cadastroProdutos.html">Cadastrar</a><br>
+			
+			<h2><a href="listagemClientes.html">Clientes</a></h2>
+
+			<a href="cadastroClientes.html">Cadastrar</a>
+
+			<h3>Vender</h3>
+			
+			<form method="get" action="index.html">
+				<label for="clientes">Cliente: </label>
+				<select id="clientes">
+					<option value="Edson">Edson</option>
+					<option value="Vanusa">Vanusa</option>
+					<option value="Nico">Nico</option>
+					<option value="Jorel">Jorel</option>
+					<option value="Gesonel">Gesonel</option>
+					<option value="Vanderlei">Vanderlei</option>
+					<option value="Steve Magal">Steve Magal</option>
+				</select><br>
+
+				<label for="produtos">Produto: </label>
+				<select id="produtos">
+					<option value="Sprok de Maçã">Sprok de Maçã</option>
+					<option value="Sapatênis da Shostners">Sapatênis da Shostners</option>
+					<option value="Anel Verde-Abacate do Destino">Anel Verde-Abacate do Destino</option>
+					<option value="Chiclete do seu Adelino">Chiclete do seu Adelino</option>
+					<option value="Álbum de Figurinhas Ultra Radical do Steve Magal">Álbum de Figurinhas Ultra Radical do Steve Magal</option>
+				</select><br>
+
+				<input type="submit" name="Vender" value="Vender">
+			</form>
+
+			<h2><a href="https://github.com/UFOP-CSI477/2019-02-atividades-tulio-s-jardim/tree/master/Assignments/01">Sair</a></h2>
+		</div>
+</body>
+
+
+</html>
