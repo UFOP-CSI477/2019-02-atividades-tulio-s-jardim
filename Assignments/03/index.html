@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<!--
+
+	01 - Criar uma página principal com as seguintes opções: Produtos (cadastrar e listar), Clientes (Listar e Vender) e Sair. Criar uma outra página (formulário) para cadastro do produto. Campos: nome, peso, unidade de medida, valor, estoque inicial, mercado (interno, externo), fornecedor (select), dentre outros -> Listar: construir uma tabela. Cadastro de clientes e Vender: construir formulários.
+
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Introdução ao HTML</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+		<a class="navbar-brand " href="index.html">Página Principal</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="listagemProdutos.html">Listagem</a>
+						<a class="dropdown-item" href="cadastroProdutos.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="listagemClientes.html">Listagem</a>
+						<a class="dropdown-item" href="cadastroClientes.html">Cadastro</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<a class="btn btn-outline-dark ml-auto" href="https://github.com/UFOP-CSI477/2019-02-atividades-tulio-s-jardim/tree/master/Assignments/01">Sair</a>
+	</nav>
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item active" aria-current="page">Início</li>
+			</ol>
+		</nav>
+
+		<div class="jumbotron">
+			<h1 class="display-4">Seja bem-vindo(a)!</h1>
+			<p class="lead">Aqui iremos lidar com os clientes e produtos de Shostners & Shostners, Seu Adelino e outros.</p>
+			<hr class="my-4">
+			<h2>Vender</h2>
+			
+			<form method="get" action="index.html">
+				<div class="form-group">
+					<label for="clientes">Cliente: </label>
+					<select id="clientes" class="form-control">
+						<option value="Edson">Edson</option>
+						<option value="Vanusa">Vanusa</option>
+						<option value="Nico">Nico</option>
+						<option value="Jorel">Jorel</option>
+						<option value="Gesonel">Gesonel</option>
+						<option value="Vanderlei">Vanderlei</option>
+						<option value="Steve Magal">Steve Magal</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="produtos">Produto: </label>
+					<select id="produtos" class="form-control">
+						<option value="Sprok de Maçã">Sprok de Maçã</option>
+						<option value="Sapatênis da Shostners">Sapatênis da Shostners</option>
+						<option value="Anel Verde-Abacate do Destino">Anel Verde-Abacate do Destino</option>
+						<option value="Chiclete do seu Adelino">Chiclete do seu Adelino</option>
+						<option value="Álbum de Figurinhas Ultra Radical do Steve Magal">Álbum de Figurinhas Ultra Radical do Steve Magal</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-primary">Vender</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
