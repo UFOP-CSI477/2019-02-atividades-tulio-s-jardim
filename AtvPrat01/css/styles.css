@@ -14,6 +14,11 @@ body {
     background-size: 120px;
     padding-bottom: 15px;
 }
+#richter-bg {
+    background-image: url('../img/richter-bg.gif');
+    background-size: 120px;
+    padding-bottom: 15px;
+}
 .clean-table {
     display: none;
 }

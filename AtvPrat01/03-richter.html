@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Cálculo de Magnitude Richter</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <div id="richter-bg">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+		<a class="navbar-brand " href="01-corrida.html">Atividade Prática 01</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+                    <a class="nav-link" href="01-corrida.html">Corrida de Rolimã</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="02-imc.html">Cálculo de IMC</a>
+                </li>
+				<li class="nav-item active">
+                    <a class="nav-link" href="#">Escala Richter <span class="sr-only">(Atual)</span></a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="04-didatica.html">Atividade Didática</a>
+                </li>
+			</ul>
+		</div>
+		<a class="btn btn-outline-dark ml-auto" href="https://github.com/UFOP-CSI477/2019-02-atividades-tulio-s-jardim/tree/master/AtvPrat01/01-corrida">Sair</a>
+    </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Início</li>
+                </ol>
+            </nav>
+
+            <div class="jumbotron">
+                <h1 class="display-4">Cálculo da Escala Richter</h1>
+                <p class="lead">Meça terremotos antes de acabar a onda de pressão máxima!</p>
+                <hr class="my-4">
+
+                <div class="form-group">
+                    <label for="amplitude">Amplitude (em mm): </label>
+                    <input type="number" id="amplitude" name="amplitude" placeholder="Insira a amplitude aqui" class="form-control" step=".01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="intervalo">Intervalo entre S e P (em segundos): </label>
+                    <input type="number" id="intervalo" name="intervalo" placeholder="Insira o intervalo aqui" class="form-control" step=".01">
+                </div>
+    
+                <input class="btn btn-success" id="inserir" onclick="insert()" value="Inserir" type="submit">
+                
+                <div id="results">      
+                    <h2 class="mt-4">Resultados</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Magnitude e seus efeitos</h3>
+                            <p id="magnitude"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-warning" id="reinicia" onclick="restart()">Reiniciar</button>
+                            </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/03-richter.js"></script>
+    </div>
+</body>
+</html>
