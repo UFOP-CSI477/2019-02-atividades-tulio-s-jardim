@@ -4,11 +4,19 @@ html {
 body {
     height: 100%;
 }
-.background-gif {
-    background-image: url('../img/background.gif');
+#corrida-bg {
+    background-image: url('../img/corrida-bg.gif');
     background-size: 150px;
+    padding-bottom: 15px;
+}
+#imc-bg {
+    background-image: url('../img/imc-bg.gif');
+    background-size: 120px;
     padding-bottom: 15px;
 }
 .clean-table {
     display: none;
+}
+#results {
+    visibility: hidden;
 }

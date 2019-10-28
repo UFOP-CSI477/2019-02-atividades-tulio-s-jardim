@@ -27,7 +27,7 @@ function insert(){
         ttempo.innerHTML = tempo.value;
         tres.innerHTML = "-";
         $("#largada option:selected").remove();
-        $('#thead').css("visibility", "visible");
+        $('#results').css("visibility", "visible");
     }
     
     largada.value = "0";
@@ -54,6 +54,7 @@ function restart() {
     for(let j=1; j<=6; j++) {
         $("#largada").append("<option value='" + j + "'>" + j + "</option>");
     }
+    $('#results').css("visibility", "hidden");
 }
 
 function result() {
