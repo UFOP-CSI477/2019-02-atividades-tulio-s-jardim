@@ -25,3 +25,13 @@ body {
 #results {
     visibility: hidden;
 }
+.questao-img {
+    max-width: 500px;
+}
+.questao2-img {
+    max-width: 300px;
+    max-height: 300px;
+}
+#questao2 {
+    display: none;
+}

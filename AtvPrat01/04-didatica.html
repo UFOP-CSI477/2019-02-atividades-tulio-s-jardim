@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Atividade Didática</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <div id="corrida-bg">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+		<a class="navbar-brand " href="01-corrida.html">Atividade Prática 01</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+                    <a class="nav-link" href="01-corrida.html">Corrida de Rolimã</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="02-imc.html">Cálculo de IMC</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="03-richter">Escala Richter</a>
+                </li>
+				<li class="nav-item active">
+                    <a class="nav-link" href="#">Atividade Didática <span class="sr-only">(Atual)</span></a>
+                </li>
+			</ul>
+		</div>
+		<a class="btn btn-outline-dark ml-auto" href="https://github.com/UFOP-CSI477/2019-02-atividades-tulio-s-jardim/tree/master/AtvPrat01">Sair</a>
+    </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Início</li>
+                </ol>
+            </nav>
+
+            <div class="jumbotron">
+                <h1 class="display-4">Testinho</h1>
+                <p class="lead">Você consegue acertar todas as perguntas?</p>
+                <hr class="my-4">
+
+                <div class="form-group text-center" id="questao">
+                    <img class="questao-img mb-2" src="img/questao1/0.jpg">
+                    <h4>Selecione a palavra que não pertence ao grupo: </h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questao-01" id="radio-a" value="a">
+                        <label id="label-a" class="form-check-label" for="radio-a">Arroz</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questao-01" id="radio-b" value="b">
+                        <label id="label-b" class="form-check-label" for="radio-b">Sabonete</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questao-01" id="radio-c" value="c">
+                        <label id="label-c" class="form-check-label" for="radio-c">Feijão</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questao-01" id="radio-d" value="d">
+                        <label id="label-d" class="form-check-label" for="radio-d">Batata</label>
+                    </div>
+                    <div class="mt-2">
+                        <input class="btn btn-success" id="inserir" onclick="insert()" value="Próxima questão" type="submit">
+                    </div>
+                </div>
+
+                <div class="form-group text-center" id="questao2">
+                    <h4>Selecione a figura geométrica correta:</h4>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img class="questao2-img" src="img/questao2/0.png">
+                        </div>
+                        <div class="col-md-4">
+                            <select name="questao-02-a" id="questao-02-a" class="form-control">
+                                    <option selected disabled value="0">Escolha uma figura geométrica</option>
+                                    <option value="-1">Triângulo</option>
+                                    <option value="-1">Quadrado</option>
+                                    <option value="1">Círculo</option>
+                                    <option value="-1">Retângulo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img class="questao2-img" src="img/questao2/1.png">
+                        </div>
+                        <div class="col-md-4">
+                            <select name="questao-02-b" id="questao-02-b" class="form-control">
+                                    <option selected disabled value="0">Escolha uma figura geométrica</option>
+                                    <option value="-1">Triângulo</option>
+                                    <option value="-1">Quadrado</option>
+                                    <option value="-1">Círculo</option>
+                                    <option value="1">Retângulo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img class="questao2-img" src="img/questao2/2.png">
+                        </div>
+                        <div class="col-md-4">
+                            <select name="questao-02-c" id="questao-02-c" class="form-control">
+                                    <option selected disabled value="0">Escolha uma figura geométrica</option>
+                                    <option value="1">Triângulo</option>
+                                    <option value="-1">Quadrado</option>
+                                    <option value="-1">Círculo</option>
+                                    <option value="-1">Retângulo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img class="questao2-img" src="img/questao2/3.png">
+                        </div>
+                        <div class="col-md-4">
+                            <select name="questao-02-d" id="questao-02-d" class="form-control">
+                                    <option selected disabled value="0">Escolha uma figura geométrica</option>
+                                    <option value="-1">Triângulo</option>
+                                    <option value="1">Quadrado</option>
+                                    <option value="-1">Círculo</option>
+                                    <option value="1">Retângulo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-2">
+                            <input class="btn btn-success" id="inserir" onclick="result()" value="Terminar" type="submit">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="results" style="display: none; visibility: visible;">      
+                    <h2 class="mt-4">Resultados</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 id="pontuacao"></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img class="questao-img mb-2" src="img/study-bg.gif"></br>
+                            <button class="btn btn-warning" id="reinicia" onclick="restart()">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/04-didatica.js"></script>
+    </div>
+</body>
+</html>
