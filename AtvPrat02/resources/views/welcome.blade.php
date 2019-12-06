@@ -6,7 +6,56 @@
             <div class="header-body text-center mt-7 mb-7">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
-                        <h1 class="text-white">{{ __('Welcome to Argon Dashboard FREE Laravel Live Preview.') }}</h1>
+                        <h1 class="text-white">{{ __('Bem-vindo(a) ao melhor jeito de se protocolar.') }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card shadow">
+                        <div class="card-header border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">{{ __('O que é o Protocolei?') }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid expedita qui error vel possimus, est minima delectus ipsum, mollitia, porro quibusdam. Fugit, quae. Minima eos corrupti odit earum autem laborum, doloremque voluptatum illo amet aspernatur, quo corporis, temporibus possimus nihil? Itaque a dolores natus, quasi praesentium nam recusandae ratione. Doloremque porro dignissimos labore rerum quas, soluta vel dolorum. Voluptates obcaecati assumenda eius nisi cum aspernatur iusto, sapiente provident, nulla doloremque id autem molestias porro qui? Dignissimos animi, accusantium cum adipisci labore voluptatibus corrupti fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card shadow">
+                        <div class="card-header border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">{{ __('Assuntos Disponíveis') }}</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">{{ __('Nome') }}</th>
+                                        <th scope="col">{{ __('Preço') }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($subjects as $subject)
+                                        <tr>
+                                            <td>{{ $subject->name }}</td>
+                                            <td>{{ $subject->price }}</td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
