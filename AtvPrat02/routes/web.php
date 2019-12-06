@@ -11,29 +11,24 @@
 |
 */
 
-
-
 Route::get('/', function () {
     return view('welcome');
-});
-
-Route::group(['middleware' => ['auth']],function(){
-    
-    Route::group(['middleware' => ['admin']], function(){
-        Route::get('/admin', function () {
-            return view('welcome');
-        });
-    });
-
-    // Route::get('/usuario/index','AreaUsuarioController@index')->name('usuario.index');
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home')->middleware('auth');
-
-});
-
+})->name('welcome');
 Auth::routes();
 
-// Route::get('/home', function() {
-//     return view('home');
-// })->name('home')->middleware('auth');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'], function () {
+
+	Route::group(['middleware' => 'admin'], function () {
+		Route::get('admin', function () {
+			return view('login');
+		});
+	});
+
+	Route::resource('user', 'UserController', ['except' => ['show']]);
+	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+

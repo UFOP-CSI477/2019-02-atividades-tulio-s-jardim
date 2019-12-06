@@ -1,62 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ProtoBrasilAdminLTE</title>
-    
-    <link rel="stylesheet" href={{ asset("vendor/adminlte/dist/css/adminlte.min.css") }}>
-    <link rel="stylesheet" href={{ asset("css/styles.css") }}>
+@extends('layouts.app', ['class' => 'bg-default'])
 
-            
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    </head>
-<body class="bg-dark">
-    <div class="container">
-        <div class="row">
-            <h1 class="flutua-e"><span>Proto</span>Brasil</h1>
-            <div class="flutua-d">
-                @if (Route::has('login'))
-                    @auth
-                        <a class="btn btn-primary my-2" href="{{ url('/home') }}">Início</a>
-                    @else
-                        <a class="btn btn-primary my-2" href="{{ route('login') }}">Entrar</a>
-
-                        @if (Route::has('register'))
-                            <a class="btn btn-primary my-2" href="{{ route('register') }}">Criar Conta</a>
-                        @endif
-                    @endauth
-                @endif
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h1>Tipos de Protocolos</h1>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Preço</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {{-- @foreach ($subjects as $s)
-                                <tr>
-                                    <td>{{ $s->id }}</td>
-                                    <td>{{ $s->name }}</td>
-                                    <td>{{ $s->price }})</td>
-                                </tr>
-                                @endforeach --}}
-                            </tbody>
-                        </table>
+@section('content')
+    <div class="header bg-gradient-primary py-7 py-lg-8">
+        <div class="container">
+            <div class="header-body text-center mt-7 mb-7">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-6">
+                        <h1 class="text-white">{{ __('Welcome to Argon Dashboard FREE Laravel Live Preview.') }}</h1>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="separator separator-bottom separator-skew zindex-100">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
     </div>
-</body>
-</html>
+
+    <div class="container mt--10 pb-5"></div>
+@endsection
