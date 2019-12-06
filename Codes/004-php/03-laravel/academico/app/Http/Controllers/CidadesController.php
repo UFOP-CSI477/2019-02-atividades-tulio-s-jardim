@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cidades;
+use App\Estado;
 use Illuminate\Http\Request;
 
 class CidadesController extends Controller
@@ -29,7 +30,9 @@ class CidadesController extends Controller
      */
     public function create()
     {
-        //
+        $estados = Estado::orderBy('nome')->get();
+        return view('cidades.create',
+          [ 'estados' => $estados ]);
     }
 
     /**
@@ -40,7 +43,18 @@ class CidadesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request);
+        // Validação
+        // Gravar
+        // Opção 01:
+        // $c = new Cidade;
+        // $c->nome = $request->nome;
+        // $c->estado_id = $request->estado_id;
+        // $c->save();
+        // Opção 02:
+        Cidades::create($request->all());
+        // return redirect('/cidades');
+        return redirect()->route('cidades.index');
     }
 
     /**
@@ -51,7 +65,11 @@ class CidadesController extends Controller
      */
     public function show(Cidades $cidades)
     {
-        //
+        // $id
+        $cidade = Cidade::find($id);
+        dd($cidade);
+        return view('cidades.show',
+            [ 'cidades' => $cidades ]);
     }
 
     /**

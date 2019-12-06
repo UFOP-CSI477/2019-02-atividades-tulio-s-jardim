@@ -19,4 +19,9 @@ Route::get('/listar', 'PaginasController@listar');
 
 Route::get('/estados', 'EstadoController@index');
 
-Route::get('/cidades', 'CidadesController@index');
+// Route::get('/cidades', 'CidadesController@index');
+// Route::get('/cidades/incluir', 'CidadesController@create');
+// Route::post('/cidades/salvar', 'CidadesController@store');
+Route::resource('/cidades', 'CidadesController');
+
+Route::get('/alunos', 'AlunosController@index');

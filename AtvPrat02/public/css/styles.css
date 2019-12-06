@@ -1,0 +1,20 @@
+.container {
+    color: #ffffff
+}
+
+.card {
+    color: #212529;
+}
+
+.flutua-e {
+    margin: 0.5rem auto 0 7.5px;
+    color: rgb(253, 255, 121);
+}
+
+.flutua-e > span {
+    color: rgb(183, 250, 82);
+}
+
+.flutua-d {
+    margin: 0.5rem 7.5px 0 auto;
+}

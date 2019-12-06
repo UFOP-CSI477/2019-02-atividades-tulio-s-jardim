@@ -28,10 +28,10 @@ class LoginController extends Controller
     public function redirectTo()
     {
         if (auth()->user()->type == 1) {
-            return 'welcome';
+            return '';
         }
 
-        return 'home';
+        return '';
     }
     // protected $redirectTo = '/home';
 
