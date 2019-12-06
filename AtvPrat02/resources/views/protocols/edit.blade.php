@@ -1,7 +1,7 @@
 @extends('layouts.app', ['title' => __('Protocolos')])
 
 @section('content')
-    @include('users.partials.header', ['title' => __('Editar Protocolo')])   
+    @include('protocols.partials.header', ['title' => __('Editar Protocolo')])   
 
     <div class="container-fluid mt--7">
         <div class="row">

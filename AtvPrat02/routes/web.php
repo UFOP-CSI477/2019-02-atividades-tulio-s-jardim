@@ -14,20 +14,16 @@
 Route::get('/', ['as' => 'welcome', 'uses' => 'SubjectsController@index']);
 Auth::routes();
 
-Route::get('home', ['as' => 'home', 'uses' => 'RequestsController@index']);
 
 Route::group(['middleware' => 'auth'], function () {
 
 	Route::group(['middleware' => 'admin'], function () {
-		Route::get('admin', function () {
-			return view('login');
-		});
+		Route::get('subjects/admin', ['as' => 'subjects.admin', 'uses' => 'SubjectsController@admin']);
+		Route::resource('subjects', 'SubjectsController', ['except' => ['show']]);
 	});
 
+	Route::get('home', ['as' => 'home', 'uses' => 'RequestsController@index']);
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::resource('protocols', 'RequestsController', ['except' => ['show']]);
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 

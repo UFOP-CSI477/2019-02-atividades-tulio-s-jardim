@@ -36,12 +36,12 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="ni ni-single-copy-04 text-orange"></i> {{ __('Meus Protocolos') }}
+                        <i class="ni ni-single-copy-04 text-primary"></i> {{ __('Meus Protocolos') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('protocols.create') }}">
-                        <i class="ni ni-active-40 text-green"></i> {{ __('Criar Protocolo') }}
+                        <i class="ni ni-active-40 text-primary"></i> {{ __('Criar Protocolo') }}
                     </a>
                 </li>
                 <li class="nav-item mb-5" style="position: absolute; bottom: 0;">
@@ -50,6 +50,23 @@
                         <i class="ni ni-user-run"></i>
                         <span>{{ __('Logout') }}</span>
                     </a>    
+                </li>
+            </ul>
+            <!-- Divider -->
+            <hr class="my-3">
+            <!-- Heading -->
+            <h6 class="navbar-heading text-muted">Funções de Administrador</h6>
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('subjects.admin') }}">
+                        <i class="ni ni-ui-04 text-orange"></i> {{ __('Assuntos do Sistema') }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('subjects.create') }}">
+                        <i class="ni ni-active-40 text-orange"></i> {{ __('Criar Assunto') }}
+                    </a>
                 </li>
             </ul>
         </div>

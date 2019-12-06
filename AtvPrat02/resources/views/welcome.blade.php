@@ -24,7 +24,7 @@
                         </div>
                         
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquid expedita qui error vel possimus, est minima delectus ipsum, mollitia, porro quibusdam. Fugit, quae. Minima eos corrupti odit earum autem laborum, doloremque voluptatum illo amet aspernatur, quo corporis, temporibus possimus nihil? Itaque a dolores natus, quasi praesentium nam recusandae ratione. Doloremque porro dignissimos labore rerum quas, soluta vel dolorum. Voluptates obcaecati assumenda eius nisi cum aspernatur iusto, sapiente provident, nulla doloremque id autem molestias porro qui? Dignissimos animi, accusantium cum adipisci labore voluptatibus corrupti fugiat.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur voluptates inventore praesentium atque adipisci tempore quos cumque. Nobis, natus molestiae voluptates unde doloribus dolor eveniet delectus minus quaerat hic laboriosam, possimus ratione rerum! Quia perspiciatis laborum dolorem expedita quis!</p>
                         </div>
                     </div>
                 </div>
