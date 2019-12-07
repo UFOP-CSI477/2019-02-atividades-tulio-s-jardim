@@ -14,6 +14,18 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-12">
+                        @if (session('status'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('status') }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        @endif
+                    </div>
+                    
                     <div class="table-responsive">
                         <table class="table align-items-center table-flush">
                             <thead class="thead-light">
@@ -32,11 +44,11 @@
                                     <tr>
                                         <td>{{ $projeto->ano }}</td>
                                         <td>{{ $projeto->semestre }}</td>
-                                        <td>{{ $projeto->id }}</td>
-                                        <td>{{ $projeto->professor->nome }}</td>
-                                        <td>{{ $projeto->aluno->nome }}</td>
+                                        <td>{{ $projeto->idprojeto }}</td>
+                                        <td>{{ $projeto->professor }}</td>
+                                        <td>{{ $projeto->aluno }}</td>
                                         <td>{{ $projeto->titulo }}</td>
-                                        <td>{{ $projeto->professor->area }}</td>
+                                        <td>{{ $projeto->area }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

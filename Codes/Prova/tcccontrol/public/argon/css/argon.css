@@ -6459,8 +6459,8 @@ input[type='button'].btn-block
 .alert-success
 {
     color: #fff;
-    border-color: #4fd69c; 
-    background-color: #4fd69c;
+    border-color: #64ad8d; 
+    background-color: #64ad8d;
 }
 .alert-success hr
 {
@@ -14561,13 +14561,13 @@ button.bg-darker:focus
 
 .text-primary
 {
-    color: #5e72e4 !important;
+    color: #760e2b !important;
 }
 
 a.text-primary:hover,
 a.text-primary:focus
 {
-    color: #324cdd !important;
+    color: #760e2b !important;
 }
 
 .text-secondary

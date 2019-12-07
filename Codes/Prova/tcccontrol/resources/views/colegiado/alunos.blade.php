@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('users.partials.header', ['title' => __('Professores da UFOP')])   
+    @include('users.partials.header', ['title' => __('Alunos da UFOP')])   
     
     <div class="container-fluid mt--7">
         <div class="row mt-5">
@@ -10,10 +10,7 @@
                     <div class="card-header border-0">
                         <div class="row align-items-center">
                             <div class="col">
-                                <h3 class="mb-0">Professores</h3>
-                            </div>
-                            <div class="col text-right">
-                                <a href="{{ route('home.professores', '')}}" class="btn btn-sm btn-primary">Visualizar todos</a>
+                                <h3 class="mb-0">Alunos</h3>
                             </div>
                         </div>
                     </div>
@@ -22,16 +19,16 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th scope="col">{{ __('ID') }}</th>
-                                    <th scope="col">{{ __('Área') }}</th>
-                                    <th scope="col">{{ __('Professor') }}</th>
+                                    <th scope="col">{{ __('Aluno') }}</th>
+                                    <th scope="col">{{ __('Curso') }}</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($professors as $professor)
+                                @foreach ($alunos as $aluno)
                                     <tr>
-                                        <td>{{ $professor->id }}</td>
-                                        <td>{{ $professor->area }}</td>
-                                        <td>{{ $professor->nome }}</td>
+                                        <td>{{ $aluno->id }}</td>
+                                        <td>{{ $aluno->nome }}</td>
+                                        <td>{{ $aluno->curso }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

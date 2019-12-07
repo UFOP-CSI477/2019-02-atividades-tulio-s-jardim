@@ -40,13 +40,13 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('welcome') }}">
                         <i class="ni ni-planet"></i>
-                        <span class="nav-link-inner--text">{{ __('Página Inicial') }}</span>
+                        <span class="nav-link-inner--text">{{ __('Projetos') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('register') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('home.professores') }}">
                         <i class="ni ni-circle-08"></i>
-                        <span class="nav-link-inner--text">{{ __('Cadastrar') }}</span>
+                        <span class="nav-link-inner--text">{{ __('Professores') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">

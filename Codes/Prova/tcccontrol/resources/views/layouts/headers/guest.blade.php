@@ -3,7 +3,7 @@
         <div class="header-body text-center mb-7">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-6">
-                    <h1 class="text-white">{{ __('Gere os protocolos necessários de forma simples e elegante.') }}</h1>
+                    <h1 class="text-white">{{ __('Seja bem-vindo(a) à Área Administrativa do TCCcontrol!') }}</h1>
                 </div>
             </div>
         </div>
